@@ -252,8 +252,6 @@ h1 {
   
 /*---------------------------------------------------------- ニュースリリース --------------------------------------------------------------*/
   
-  div {display: block;}
-  
     #sub_cover {
       background-image: url(../images/news/sub_cover.jpg);
       background-size: cover;
@@ -331,10 +329,8 @@ h1 {
 
         #contents #sidebar .pc_sidemenu li {
           background-image: url(../images/news/side_arrow.png);
-          background-position-x: 8px; 
-          background-position-y: center; 
-          background-repeat-x: no-repeat;
-          background-repeat-y: no-repeat;
+          background-position: 8px center;
+          background-repeat: no-repeat;
           background-size: 4px 8px;
           border-bottom-color: rgb(229, 229, 229);
           border-bottom-style: solid;
@@ -410,27 +406,26 @@ h1 {
     #contents {
       padding-top: 35px;
     }
-    
+      
       #contents #main h2 {
         font-size: 2rem;
         padding-bottom: 20px;
       }
       
+      #contents #main th {
+        padding-right: 20px;
+      }
+              
         #contents #main .news_li li span {
           display: inline-block;
           margin-bottom: 0px;
         }
-      
-      
+        
+  }    
 
 /*-------------------------------------------------会社概要 スマホ表示---------------------------------------------------*/
 
-  @media (min-width: 550px) {
-    
-          #contents #main th {
-            padding-right: 20px;
-          }
-  }
+@media (max-width: 550px){#contents #sidebar .pc_sidemenu{display:none;}}
 
 
 
